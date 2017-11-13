@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Gerador de Referências ABNT</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<form method="get" action="" class="generator" id="generator">
+		<p>
+			<label>Título:</label>
+			<p class="small">Obterá o título automaticamente se o título estiver vázio ou se a opção para tal estiver marcada.</p>
+			<p>
+				<input type="text" name="title" id="title">
+			</p>
+		</p>
+
+		<p>
+			<label>Endereço URL: <span class="danger">*</span></label>
+			<p>
+				<input type="text" name="url" id="url" required>
+			</p>
+		</p>
+
+		<p>
+			<label>Autor(es):</label>
+
+			<p>
+				<input type="text" name="author" id="author">
+			</p>
+		</p>
+
+		<p>
+			<p>
+				<input type="checkbox" id="automatic">
+				<label for="automatic">Obter título automaticamente</label>
+			</p>
+
+			<p>
+				<input type="submit" id="generate" class="generate" value="Gerar">
+				<input type="reset" id="generate" class="generate" value="Limpar">
+			</p>
+		</p>
+
+		<div class="reference" id="reference">
+		</div>
+
+		<p>
+			<input type="button" class="generate copy" value="Copiar" data-clipboard-target="#reference">
+		</p>
+	</form>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/clipboard.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

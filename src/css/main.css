@@ -1,0 +1,57 @@
+body,
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.generator {
+	width: 80%;
+	margin: auto;
+	padding-top: 25px;
+}
+
+.generator p {
+	line-height: .5em;
+	display: block;
+}
+
+.small {
+	font-size: 11px !important;
+}
+
+.danger {
+	color: red;
+}
+
+.generator input[type="text"] {
+	width: 100%;
+	padding: 8px;
+	font: inherit;
+}
+
+.generator p label {
+	font-weight: bold;
+}
+
+.generate {
+	border: 2px solid black;
+	padding: 12px;
+	font-weight: bold;
+	background-color: white;
+}
+
+.generate:hover {
+	cursor: pointer;
+	background: #f1f1f1;
+}
+
+#reference {
+	width: 100%;
+	text-align: justify;
+	border: 2px dashed black;
+	padding: 15px;
+	display: none;
+}
+
+.copy {
+	display: none;
+}

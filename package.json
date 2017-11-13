@@ -1,0 +1,21 @@
+{
+  "name": "abntreference",
+  "version": "1.0.0",
+  "description": "ABNT Reference Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "abnt",
+    "reference"
+  ],
+  "author": "Jota Júnior",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {}
+}
