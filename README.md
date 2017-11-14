@@ -5,6 +5,9 @@ Gerador de referências no padrão ABNT para uso pessoal
 # Instalar
 
 - Clonar o repositório `git clone https://github.com/jotaajunior/abntreference.git`
+- Instalar as dependências `sudo apt install npm`
+- Atualizar os repsitórios `sudo apt update`
+- Ir para o diretório `cd abntreferece`
 - Instalar os packages `npm install`
 - Iniciar `npm start`
 
