@@ -3,6 +3,8 @@ const axios = require('axios');
 const path = require('path');
 const app = express();
 
+app.set('port', (process.env.PORT || 3000));
+
 app.use('/js', express.static('src/js'));
 app.use('/css', express.static('src/css'));
 
@@ -29,4 +31,6 @@ app.get(/(GetTitle)\/(.*)$/, (req, res) => {
 	});
 });
 
-app.listen(3000);
+app.listen(app.get('port'), () => {
+	console.log('abntreference running on port', app.get('port'));
+});
